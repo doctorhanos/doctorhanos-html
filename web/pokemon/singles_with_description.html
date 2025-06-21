@@ -6,12 +6,7 @@
       margin: 0;
       font-family: 'Verdana', sans-serif;
       background: #ffffff;
-      color: #333;
-    }
-
-    body.night {
-      background: #000;
-      color: #f5f5f5;
+      color: #2b2b2b;
     }
 
     .description-box {
@@ -21,40 +16,25 @@
       border-radius: 12px;
     }
 
-    body.night .description-box {
-      background: url('background.png') no-repeat center top;
-      background-size: cover;
-    }
-
     .container {
       max-width: 750px;
       margin: 0 auto;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: #ffffff;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
-
-    body.night .container {
-      background-color: rgba(20, 20, 20, 0.95);
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .series-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 3px solid #e15a42;
-      border-radius: 20px;
-      padding: 10px 20px;
+      background-color: #ffffff;
+      border: 3px solid #2b2b2b;
+      border-radius: 18px;
+      padding: 12px 20px;
       margin-bottom: 30px;
       gap: 15px;
-    }
-
-    body.night .series-header {
-      background-color: rgba(43, 43, 43, 0.85);
-      border-color: #fff;
     }
 
     .logo-doctorhanos {
@@ -65,51 +45,30 @@
       height: 90px;
     }
 
-    .series-title {
-      font-size: 22px;
-      font-weight: bold;
-      flex-grow: 1;
-      text-align: center;
-    }
-
-    .series-header .avatar {
+    .avatar {
       height: 80px;
       width: 80px;
       border-radius: 50%;
-      border: 3px solid #333;
+      border: 3px solid #2b2b2b;
       background-color: #fff;
     }
 
-    body.night .series-header .avatar {
-      border-color: #fff;
-    }
-
-    .item-description {
-      background-color: rgba(255,255,255,0.8);
-      border: 2px solid #aaa;
-      border-radius: 16px;
+    .item-description, .shipping-info {
+      background-color: #f5f5f5;
+      border: 3px solid #2b2b2b;
+      border-radius: 18px;
       padding: 20px;
       line-height: 1.6;
       margin-bottom: 30px;
-    }
-
-    body.night .item-description {
-      background-color: rgba(40,40,40,0.9);
-      border-color: #666;
-      color: #eee;
+      color: #2b2b2b;
     }
 
     .series-details {
-      background: #fff;
-      border: 3px solid #333;
+      background: #ffffff;
+      border: 3px solid #2b2b2b;
       border-radius: 18px;
       padding: 20px;
       margin-bottom: 30px;
-    }
-
-    body.night .series-details {
-      background: #2b2b2b;
-      border-color: #fff;
     }
 
     .series-details table {
@@ -125,18 +84,14 @@
     }
 
     .series-details th {
-      background-color: #ffeaa7;
+      background-color: #2b2b2b;
+      color: #ffffff;
       font-weight: bold;
     }
 
-    body.night .series-details th {
-      background-color: #444;
-      color: #fff;
-    }
-
-    body.night .series-details td {
-      border-color: #555;
-      color: #ddd;
+    .series-details td {
+      background-color: #fdfdfd;
+      color: #2b2b2b;
     }
 
     @media (max-width: 700px) {
@@ -145,36 +100,36 @@
         align-items: center;
         text-align: center;
       }
-
-      .series-title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
     }
   </style>
 </head>
-
-<body class="day">
-
+<body>
   <div class="description-box">
     <div class="container">
 
-      <!-- 🔹 Top Banner with Enlarged Logos -->
+      <!-- Header Banner -->
       <div class="series-header">
-        <img src="logo.png" alt="Doctor Hanos Logo" class="logo-doctorhanos">
-        <img src="hotairarena.png" alt="Hot Wind Arena Logo" class="series-logo">
-        <img src="doctor_hanos_avatar_web.jpg" alt="Doctor Hanos Avatar" class="avatar">
+        <img src="https://raw.githubusercontent.com/doctorhanos/doctorhanos-html/refs/heads/main/assets/branding/logo.png" alt="Doctor Hanos Logo" class="logo-doctorhanos">
+        <img src="hotairarena.png" alt="Set Logo" class="series-logo">
+        <img src="https://i.ebayimg.com/images/g/KI4AAOSwajloOs6O/s-l140.webp" alt="Doctor Hanos Avatar" class="avatar">
       </div>
 
-      <!-- 🔹 Item Description Section -->
+      <!-- Item Description -->
       <div class="item-description">
         <h3>Item Description</h3>
-        <p>
-          Explore an incredible collection of singles from the Japanese-exclusive Hot Wind Arena set! Carefully sourced and inspected — perfect for collectors or competitive players seeking unique cards.
-        </p>
+        <p>Welcome to Doctor Hanos Pokémon Cards! Explore our collection of singles from the Japanese-exclusive <strong>Pokemon TCG: Journey Together</strong> set. Each card is carefully selected, guaranteed genuine, and in Near Mint condition unless stated otherwise.</p>
       </div>
 
-      <!-- 🔹 Series Details Table -->
+      <!-- Shipping Information -->
+      <div class="shipping-info">
+        <h3>Shipping Information</h3>
+        <p>Same Business Day Shipping if ordered before 2pm AEST, otherwise Next Business Day.</p>
+        <p>All cards are shipped securely in sleeves with cardboard backing.</p>
+        <p><strong>Domestic:</strong> Australia Post Domestic Regular Letter Untracked (2 - 8 Business Days) from Echuca VIC.</p>
+        <p><strong>International:</strong> Australia Post International Standard (3 - 10 Business Days) from Echuca VIC.</p>
+      </div>
+
+      <!-- Series Details Table -->
       <div class="series-details">
         <table>
           <tr>
@@ -182,34 +137,25 @@
             <th>Value</th>
           </tr>
           <tr>
-          <td>Card Condition</td>
-          <td>Near Mint (Fresh Pack)</td>
-          </tr>
-          <tr>
             <td>Series Name</td>
-            <td>Hot Wind Arena</td>
-          </tr>
-          <tr>
-            <td>Japanese Name</td>
-            <td>熱風のアリーナ</td>
+            <td>Pokemon TCG: Journey Together</td>
           </tr>
           <tr>
             <td>Release Date</td>
-            <td>July 12, 2023</td>
+            <td>March 28, 2025</td>
           </tr>
           <tr>
             <td>Number of Cards</td>
-            <td>98 (+ Secret Rares)</td>
+            <td>190</td>
           </tr>
           <tr>
-            <td>Region</td>
-            <td>Japan</td>
+            <td>Condition</td>
+            <td>Near Mint</td>
           </tr>
         </table>
       </div>
 
     </div>
   </div>
-
 </body>
 </html>
