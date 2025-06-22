@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background: #0d0221;
+      color: #ffffff;
+    }
+
+    .description-box {
+      background: url('background_tokyo_pixel.png') no-repeat center top;
+      background-size: cover;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: rgba(13, 2, 33, 0.6);
+      border-radius: 12px;
+      border: 2px solid #00f0ff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .series-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0d0221;
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 12px 20px;
+      margin-bottom: 30px;
+    }
+
+    .retro-logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .combined-info, .shipping-info {
+      background-color: rgba(0, 240, 255, 0.1);
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .combined-info p,
+    .shipping-info p {
+      color: #ffffff;
+    }
+
+    h3 {
+      color: #ff00d4;
+    }
+
+    @media (max-width: 700px) {
+      .series-header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="description-box">
+    <div class="container">
+
+      <!-- Header Banner -->
+      <div class="series-header">
+        <img src="retro_logo.png" alt="Doctor Hanos Vinyl & Cassette Logo" class="retro-logo">
+      </div>
+
+      <!-- Combined Info Section -->
+      <div class="combined-info">
+        <h3>About This Release</h3>
+        <p><strong>Album:</strong> The Sweetest Dream</p>
+        <p><strong>Artist:</strong> Desired</p>
+        <p><strong>Format:</strong> Vinyl / Cassette</p>
+        <p><strong>Release Year:</strong> 2022</p>
+        <p><strong>Genre:</strong> Future Funk / City Pop</p>
+        <p><strong>Condition:</strong> New / Sealed</p>
+      </div>
+
+      <!-- Shipping Information -->
+      <div class="shipping-info">
+        <h3>Shipping Information</h3>
+        <p>Same Business Day Shipping if ordered before 2pm AEST, otherwise Next Business Day.</p>
+        <p>All items are shipped with protective packaging to ensure safe delivery.</p>
+        <p><strong>Domestic:</strong> Australia Post Regular (2 - 8 Business Days) from Echuca VIC.</p>
+        <p><strong>International:</strong> Australia Post International Standard (3 - 10 Business Days) from Echuca VIC.</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
