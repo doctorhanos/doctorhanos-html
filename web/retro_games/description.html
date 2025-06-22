@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background: #0d0221;
+      color: #ffffff;
+    }
+
+    .description-box {
+      background: url('https://raw.githubusercontent.com/doctorhanos/doctorhanos-html/refs/heads/main/assets/bg/background_tokyo_pixel.png') no-repeat center top;
+      background-size: cover;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: rgba(13, 2, 33, 0.9);
+      border-radius: 12px;
+      border: 2px solid #00f0ff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .series-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0d0221;
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 12px 20px;
+      margin-bottom: 30px;
+    }
+
+    .retro-logo {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .combined-info, .shipping-info {
+      background-color: rgba(0, 240, 255, 0.1);
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .combined-info p,
+    .shipping-info p {
+      color: #ffffff;
+    }
+
+    h3 {
+      color: #ffffff;
+    }
+
+    .release-section {
+      background-color: rgba(0, 240, 255, 0.1);
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .release-section p {
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      .series-header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="description-box">
+    <div class="container">
+
+      <!-- Header Banner -->
+      <div class="series-header">
+        <img src="https://raw.githubusercontent.com/doctorhanos/doctorhanos-html/refs/heads/main/assets/branding/logo_future_gaming.png" alt="Doctor Hanos Retro Gaming Logo" class="retro-logo">
+      </div>
+
+      <!-- About This Game -->
+      <div class="release-section">
+        <h3>About This Game</h3>
+        <p><strong>Game:</strong> Final Fantasy VI</p>
+        <p><strong>Platform:</strong> Super Nintendo Entertainment System (SNES)</p>
+        <p><strong>Publisher:</strong> Square</p>
+        <p><strong>Region:</strong> NTSC-U/C (US/Canada)</p>
+        <p><strong>Release Year:</strong> 1994</p>
+        <p><strong>Condition:</strong> Very Good - Tested and Working</p>
+      </div>
+
+      <!-- Shipping Information -->
+      <div class="shipping-info">
+        <h3>Shipping Information</h3>
+        <p>Same Business Day Shipping if ordered before 2pm AEST, otherwise Next Business Day.</p>
+        <p>Shipped with ❤️ from Echuca, Victoria</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
