@@ -5,12 +5,11 @@
     body {
       margin: 0;
       font-family: 'Verdana', sans-serif;
-      background: #0d0221;
       color: #ffffff;
     }
 
     .description-box {
-      background: url('background_tokyo_pixel.png') no-repeat center top;
+      background: url('https://raw.githubusercontent.com/doctorhanos/doctorhanos-html/refs/heads/main/assets/bg/background_tokyo_pixel.png') no-repeat center top;
       background-size: cover;
       padding: 20px;
       width: 100%;
@@ -19,7 +18,7 @@
 
     .container {
       padding: 20px;
-      background-color: rgba(13, 2, 33, 0.6);
+      background-color: rgba(13, 2, 33, 0.9);
       border-radius: 12px;
       border: 2px solid #00f0ff;
       max-width: 900px;
@@ -57,12 +56,44 @@
     }
 
     h3 {
-      color: #ff00d4;
+      color: #ffffff;
+    }
+
+    .album-section {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background-color: rgba(0, 240, 255, 0.1);
+      border: 3px solid #00f0ff;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .album-section img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #00f0ff;
+    }
+
+    .album-details {
+      flex: 1;
     }
 
     @media (max-width: 700px) {
       .series-header {
         flex-direction: column;
+        text-align: center;
+      }
+
+      .album-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .album-details {
         text-align: center;
       }
     }
@@ -77,15 +108,21 @@
         <img src="https://raw.githubusercontent.com/doctorhanos/doctorhanos-html/refs/heads/main/assets/branding/logo_future_music.png" alt="Doctor Hanos Vinyl & Cassette Logo" class="retro-logo">
       </div>
 
-      <!-- Combined Info Section -->
-      <div class="combined-info">
-        <h3>About This Release</h3>
-        <p><strong>Album:</strong> The Sweetest Dream</p>
-        <p><strong>Artist:</strong> Desired</p>
-        <p><strong>Format:</strong> Vinyl / Cassette</p>
-        <p><strong>Release Year:</strong> 2022</p>
-        <p><strong>Genre:</strong> Future Funk / City Pop</p>
-        <p><strong>Condition:</strong> New / Sealed</p>
+      <!-- Album Section with Image and Details -->
+      <div class="album-section">
+        <img src="album_cover.png" alt="Album Cover">
+        <div class="album-details">
+          <h3>About This Release</h3>
+          <p><strong>Album:</strong> Plastic Whatever</p>
+          <p><strong>Artist:</strong> Desired</p>
+          <p><strong>Label:</strong> Neoncity Records – SRT006, Sailor Team – SRT006</p>
+          <p><strong>Format:</strong> Cassette, Album, Limited Edition, Reissue, Stereo, pink</p>
+          <p><strong>Country:</strong> Hong Kong</p>
+          <p><strong>Released:</strong> 9 May 2023</p>
+          <p><strong>Genre:</strong> Electronicp</p>
+          <p><strong>Style:</strong> Vaporwave, Nu-Disco</p>
+          <p><strong>Condition:</strong> Very Good (VG+)</p>
+        </div>
       </div>
 
       <!-- Shipping Information -->
