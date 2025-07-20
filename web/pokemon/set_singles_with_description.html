@@ -63,35 +63,30 @@
       color: #2b2b2b;
     }
 
-    .series-details {
-      background: #ffffff;
-      border: 3px solid #2b2b2b;
-      border-radius: 18px;
-      padding: 20px;
-      margin-bottom: 30px;
+    .item-description h3 {
+      margin-top: 0;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #2b2b2b;
     }
 
-    .series-details table {
+    .item-description table {
       width: 100%;
       border-collapse: collapse;
+      margin-top: 15px;
     }
 
-    .series-details th,
-    .series-details td {
+    .item-description td {
       padding: 10px;
       border-bottom: 1px solid #ccc;
       text-align: left;
-    }
-
-    .series-details th {
-      background-color: #2b2b2b;
-      color: #ffffff;
-      font-weight: bold;
-    }
-
-    .series-details td {
       background-color: #fdfdfd;
       color: #2b2b2b;
+    }
+
+    .item-description td:first-child {
+      font-weight: bold;
+      width: 40%;
     }
 
     @media (max-width: 700px) {
@@ -114,45 +109,44 @@
         <img src="https://i.ebayimg.com/images/g/KI4AAOSwajloOs6O/s-l140.webp" alt="Doctor Hanos Avatar" class="avatar">
       </div>
 
-      <!-- Series Details Table -->
-      <div class="series-details">
-        <table>
-          <tbody>
-          <tr>
-            <td>Set Name</td>
-            <td>Snow Hazard</td>
-          </tr>
-          <tr>
-            <td>Set Identifier</td>
-            <td>sv2P</td>
-          </tr>
-          <tr>
-            <td>Release Date</td>
-            <td>April 14, 2023</td>
-          </tr>
-          <tr>
-            <td>Number of Cards</td>
-            <td>99</td>
-          </tr>
-          <tr>
-            <td>Condition</td>
-            <td>Lightly Played</td>
-          </tr>
-        </tbody></table>
-      </div>
-
-      <!-- Item Description -->
+      <!-- Combined Item Description and Series Details -->
       <div class="item-description">
         <h3>Item Description</h3>
         <p>Pokemon TCG Japanese Snow Hazard Singles - Complete your set today!</p>
+
+        <h3>Card Details</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Set Name</td>
+              <td>Snow Hazard</td>
+            </tr>
+            <tr>
+              <td>Set Identifier</td>
+              <td>sv2P</td>
+            </tr>
+            <tr>
+              <td>Release Date</td>
+              <td>April 14, 2023</td>
+            </tr>
+            <tr>
+              <td>Number of Cards</td>
+              <td>99</td>
+            </tr>
+            <tr>
+              <td>Condition</td>
+              <td>Lightly Played</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <!-- Shipping Information -->
-    <div class="shipping-info">
-      <p>Same Business Day Shipping if ordered before 2pm AEST, otherwise Next Business Day.</p>
-      <p>Cards are shipped using a tag sleeve, a grading card protector and a team bag for their journey to you.</p>
-      <p>Shipped with ❤️ from Echuca, Victoria</p>
-    </div>
+      <div class="shipping-info">
+        <p>Same Business Day Shipping if ordered before 2pm AEST, otherwise Next Business Day.</p>
+        <p>Cards are shipped using a tag sleeve, a grading card protector and a team bag for their journey to you.</p>
+        <p>Shipped with ❤️ from Echuca, Victoria</p>
+      </div>
 
     </div>
   </div>

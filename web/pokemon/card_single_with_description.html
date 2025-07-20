@@ -53,20 +53,29 @@
     color: #2b2b2b;
   }
 
-  .series-details {
-    background: #ffffff;
-    border: 3px solid #2b2b2b;
-    border-radius: 18px;
-    padding: 20px;
-    margin-bottom: 30px;
+  .item-description h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+    text-align: left;
   }
 
-  .series-details table {
+  .card-images h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+    text-align: center;
+  }
+
+  .item-description table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 15px;
   }
 
-  .series-details td {
+  .item-description td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     text-align: left;
@@ -74,21 +83,26 @@
     color: #2b2b2b;
   }
 
-  .series-details td:first-child {
+  .item-description td:first-child {
     font-weight: bold;
     width: 40%;
   }
 
-  .card-images img {
+  .card-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card-image-block {
     width: 48%;
+  }
+
+  .card-image-block img {
+    width: 100%;
     border-radius: 12px;
     border: 2px solid #2b2b2b;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    margin-right: 2%;
-  }
-
-  .card-images img:last-child {
-    margin-right: 0;
   }
 
   @media (max-width: 700px) {
@@ -98,12 +112,12 @@
       text-align: center;
     }
 
-    .card-images img {
+    .card-image-block {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
-    .card-images img:last-child {
+    .card-image-block img:last-child {
       margin-bottom: 0;
     }
   }
@@ -119,14 +133,24 @@
       <img src="https://i.ebayimg.com/images/g/KI4AAOSwajloOs6O/s-l140.webp" alt="Doctor Hanos Avatar" class="avatar">
     </div>
 
-    <!-- Card Images -->
+    <!-- Card Images with Headings -->
     <div class="card-images">
-      <img src="https://dz3we2x72f7ol.cloudfront.net/expansions/journey-together/en-us/SV09_EN_162.png" alt="Front of Card">
-      <img src="https://tcg.pokemon.com/assets/img/global/tcg-card-back.jpg" alt="Back of Pokémon card">
+      <div class="card-image-block">
+        <h3>Front Card</h3>
+        <img src="https://dz3we2x72f7ol.cloudfront.net/expansions/journey-together/en-us/SV09_EN_162.png" alt="Front of Card">
+      </div>
+      <div class="card-image-block">
+        <h3>Back Card</h3>
+        <img src="https://tcg.pokemon.com/assets/img/global/tcg-card-back.jpg" alt="Back of Pokémon card">
+      </div>
     </div>
 
-    <!-- Series Details Table -->
-    <div class="series-details">
+    <!-- Combined Description with Headings and Table -->
+    <div class="item-description">
+      <h3>Item Description</h3>
+      <p>Fresh Pack Mint Scarlet &amp; Violet - Journey Together Wailord 162/159 Illustration Rare.</p>
+
+      <h3>Card Details</h3>
       <table>
         <tbody>
           <tr>
@@ -155,11 +179,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-
-    <!-- Item Description -->
-    <div class="item-description">
-      <p>Fresh Pack Mint Scarlet &amp; Violet - Journey Together Wailord 162/159 Illustration Rare.</p>
     </div>
 
     <!-- Shipping Information -->
